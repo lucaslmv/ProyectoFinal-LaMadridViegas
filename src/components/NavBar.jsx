@@ -2,10 +2,12 @@ import React from 'react';
 import CartWidget from './CartWidget';
 import Titulo from './Titulo';
 import './NavBar.css';
+
 const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="logo-container">
+        <img src="./bolsa2.PNG" alt="logo de BodyBags" class="logo" />
         <Titulo />
       </div>
       <ul className="nav-links">

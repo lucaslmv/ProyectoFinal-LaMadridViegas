@@ -9,14 +9,24 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: #ffffff;
+ height: auto;
+ width: 70px;
+ transform: scale(1.2);
+ transition: all 0.3s;
+}
+
+.logo-container {
+
+  display: flex;
+  align-items: center;
+
+
 }
 
 .nav-links {
   list-style: none;
   display: flex;
+  align-items:center;
   gap: 2rem;
 }
 
@@ -32,4 +42,6 @@ nav {
 
 .nav-links a:hover {
   color: #b4b4b4;
+  transform: scale(1.2);
+  transition: all 0.3s;
 }
