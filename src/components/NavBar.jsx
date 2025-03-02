@@ -1,5 +1,5 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import CartWidget from './CartWidget';
 import Titulo from './Titulo';
 import './NavBar.css';
@@ -12,11 +12,11 @@ const NavBar = () => {
         <Titulo />
       </div>
       <ul className="nav-links">
-      <li><Link to="/">Inicio</Link></li>
+        <li><Link to="/">Inicio</Link></li>
         <li><Link to="/category/bandoleras">Bandoleras</Link></li>
         <li><Link to="/category/riñoneras">Riñoneras</Link></li>
         <li><Link to="/category/mate">Set Materos</Link></li>
-        <li><Link to="/cart">🛒 Carrito</Link></li>
+        <li><Link to="/cart">Carrito</Link></li>
       </ul>
       <CartWidget />
     </nav>

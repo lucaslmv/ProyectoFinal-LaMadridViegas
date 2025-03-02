@@ -1,0 +1,30 @@
+.item-detail {
+    padding: 2rem;
+    background-color: #1a1a1a;
+    color: #fff;
+    max-width: 600px;
+    margin: 2rem auto;
+    border: 1px solid #ffa500;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .item-detail h2 {
+    color: #ffa500;
+    margin-bottom: 1rem;
+  }
+  
+  .item-detail img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 4px;
+  }
+  
+  .item-detail p {
+    color: #ccc;
+    margin: 0.5rem 0;
+  }
+  
+  .item-detail .stock-alert {
+    color: #ff4444;
+  }

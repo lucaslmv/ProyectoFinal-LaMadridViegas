@@ -5,7 +5,8 @@ const bagProducts = [
       price: 25000,
       category: 'bandoleras',
       description: 'Negra',
-      image:"./BandoleraDOREMI.jpg",
+      image:"/BandoleraDOREMI.jpg",
+      stock: 10,
     },
     {
       id: 2, 
@@ -13,7 +14,8 @@ const bagProducts = [
       price: 15000,
       category: 'bandoleras',
       description: 'Negra',
-      image:"./BandoleraElite.jpg",
+      image:"/BandoleraElite.jpg",
+      stock:12,
     },
     {
       id: 3, 
@@ -21,7 +23,8 @@ const bagProducts = [
       price: 20000,
       category: 'bandoleras',
       description: 'Negra',
-      image:"./BandoleraHit.jpg",
+      image:"/BandoleraHit.jpg",
+      stock:15,
     },
     {
       id: 4, 
@@ -29,7 +32,8 @@ const bagProducts = [
       price: 20000,
       category: 'bandoleras',
       description: 'Negra, Violeta, Gris, Verde ',
-      image:"./BandoleraMaillot.jpg",
+      image:"/BandoleraMaillot.jpg",
+      stock:18,
     },
     {
       id: 5, 
@@ -37,7 +41,8 @@ const bagProducts = [
       price: 30000,
       category: 'bandoleras',
       description: 'Negra, Violeta, Gris',
-      image: "./BandoleraNati.jpg",
+      image: "/BandoleraNati.jpg",
+      stock:7,
     },
     {
       id: 6, 
@@ -45,7 +50,8 @@ const bagProducts = [
       price: 30000,
       category: 'bandoleras',
       description: 'Verde',
-      image:"./BandoleraReversible.jpg",
+      image:"/BandoleraReversible.jpg",
+      stock:8,
     },
     {
       id: 7, 
@@ -53,7 +59,8 @@ const bagProducts = [
       price: 25000,
       category: 'bandoleras',
       description: 'Negra',
-      image:"./BandoleraRonda.jpg",
+      image:"/BandoleraRonda.jpg",
+      stock: 5,
     },
     {
       id: 8, 
@@ -61,7 +68,8 @@ const bagProducts = [
       price: 18000,
       category: 'bandoleras',
       description: 'Negra',
-      image: "./BandoleraWAXX.jpg",
+      image: "/BandoleraWAXX.jpg",
+      stock:10,
     },
     {
       id: 9, 
@@ -69,7 +77,8 @@ const bagProducts = [
       price: 18000,
       category: 'riñoneras',
       description: 'Negra',
-      image:"./Riñonera808-7bolsillos.jpg",
+      image:"/Riñonera808-7bolsillos.jpg",
+      stock: 7,
     },
     {
       id: 10, 
@@ -77,7 +86,8 @@ const bagProducts = [
       price: 15000,
       category: 'riñoneras',
       description: 'Negra',
-      image:"./RiñoneraMal.jpg",
+      image:"/RiñoneraMal.jpg",
+      stock:20,
     },
     {
       id: 11, 
@@ -85,7 +95,8 @@ const bagProducts = [
       price: 20000,
       category: 'mate',
       description: 'Verde Militar',
-      image:"./SetMateroCamuflado.jpg",
+      image:"/SetMateroCamuflado.jpg",
+      stock:25,
     },
     {
       id: 12, 
@@ -93,7 +104,8 @@ const bagProducts = [
       price: 20000,
       category: 'mate',
       description: 'Negro',
-      image:"./SetMateroNegro.jpg",
+      image:"/SetMateroNegro.jpg",
+      stock:30,
     },
     {
       id: 13, 
@@ -101,8 +113,10 @@ const bagProducts = [
       price: 20000,
       category: 'mate',
       description: 'Rojo',
-      image:"./SetMateroRojo.jpg",
+      image:"/SetMateroRojo.jpg",
+      stock:10,
     },
   ];
 
   export default bagProducts;
+  console.log(bagProducts);

@@ -1,28 +1,36 @@
 import { useEffect, useState } from "react";
-import {useParams } from "react-router-dom";
-import bagProducts from '../bagsProducts';
+import { useParams } from "react-router-dom";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebase/config";
+import ItemDetail from "./ItemDetail";
 
-export default function ItemDetailContainer() {
+const ItemDetailContainer = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    const foundProduct = bagProducts.find((prod) => prod.id === Number(id));
-    setProduct(foundProduct);
+    const getProduct = async () => {
+      try {
+        const productRef = doc(db, "products", id);
+        const productSnap = await getDoc(productRef);
+
+        if (productSnap.exists()) {
+          setProduct({ id: productSnap.id, ...productSnap.data() });
+        } else {
+          console.log("Producto no encontrado");
+        }
+      } catch (error) {
+        console.error("Error al cargar producto:", error);
+      }
+    };
+
+    getProduct();
   }, [id]);
 
-  if (!product) return <h2>Producto no encontrado</h2>;
+  return product ? <ItemDetail product={product} /> : <p>Cargando...</p>;
+};
 
-  console.log("Producto en detalle:", product);
+export default ItemDetailContainer;
 
-  return (
-    <div>
-      <h1>{product.title}</h1>
-      <img src={`/${product.image}`} alt={product.title} />
-      <p>Descripción: {product.description}</p>
-      <p>Categoría: {product.category}</p>
-      <p>Precio: ${product.price}</p>
-    </div>
-  );
-}
+
 

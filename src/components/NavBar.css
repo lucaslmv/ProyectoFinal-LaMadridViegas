@@ -1,32 +1,33 @@
-nav {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
- height: auto;
- width: 70px;
- transform: scale(1.2);
- transition: all 0.3s;
+  background-color: #1a1a1a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 }
 
 .logo-container {
-
   display: flex;
   align-items: center;
+  gap: 1rem;
+}
 
+.logo {
+  width: 50px;
+  filter: brightness(1.2);
+}
 
+.titulo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  color: #ffff; 
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  align-items:center;
   gap: 2rem;
 }
 
@@ -41,7 +42,17 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #b4b4b4;
-  transform: scale(1.2);
-  transition: all 0.3s;
+  color: #ffa500;
+}
+
+.cart-widget {
+  font-size: 1.5rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cart-widget:hover {
+  color: #ffa500;
 }
